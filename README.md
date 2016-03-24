@@ -14,6 +14,8 @@ This sample subscribes to notification on the signed in user's OneDrive and
 displays the name of the files that were added, modified, or deleted when a
 notification is received.
 
+**Note:** Webhooks are still being enabled as a _preview only_ on OneDrive for Business. Webhooks functionality may not be available for your tenant yet. You can use a OneDrive Personal account to test functionality if this is the case.
+
 ## Prerequisites
 
 To use the OneDrive Webhooks sample, you need the following:
