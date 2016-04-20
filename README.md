@@ -35,12 +35,12 @@ To use the OneDrive Webhooks sample, you need the following:
     [Office 365 app registration tool](https://dev.office.com/app-registration),
     which simplifies the process. Use the following parameters:
 
-    | Parameter       | Value                    |
-    |:----------------|:-------------------------|
-    |        App type | Web App                  |
-    |     Sign on URL | https://localhost:52026/ |
-    |    Redirect URI | https://localhost:52026/ |
-    | App permissions | Files.ReadWrite          |
+    | Parameter       | Value                   |
+    |:----------------|:------------------------|
+    |        App type | Web App                 |
+    |     Sign on URL | http://localhost:52026/ |
+    |    Redirect URI | http://localhost:52026/ |
+    | App permissions | Files.ReadWrite         |
 
    Copy and store the returned **Client ID** and **Client Secret** values.
 
