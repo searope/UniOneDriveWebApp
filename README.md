@@ -166,3 +166,5 @@ You can suggest changes for OneDrive on [UserVoice](onedrive.uservoice.com/forum
 ## License
 
 See [LICENSE](LICENSE.md) for the license for this sample code.
+
+This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
