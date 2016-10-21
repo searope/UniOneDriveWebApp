@@ -1,0 +1,20 @@
+﻿@using UniOneDriveWebApp.Models
+@using UniOneDriveWebApp.Helpers
+@model List<OneDriveItemViewModel>
+
+@foreach (var i in Model)
+{
+    <tr>
+        <td>@i.DriveName</td>
+        <td>@i.ItemType</td>
+        <td>@i.ChangeType</td>
+        <td>@i.Id</td>
+        <td><a href="@i.Url">@i.Name</a></td>
+        <td>@(i.Size == null ? "N/A" : Helper.SizeFormatter(i.Size.Value))</td>
+        <td>@(i.CreatedBy ?? "N/A")</td>
+        <td>@(i.CreatedDateTime?.ToString("u") ?? "N/A")</td>
+        <td>@(i.LastModifiedBy ?? "N/A")</td>
+        <td>@(i.LastModifiedDateTime?.ToString("u") ?? "N/A")</td>
+    </tr>
+}
+<tr style="outline: thin solid black;"></tr>

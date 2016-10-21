@@ -1,0 +1,52 @@
+﻿@model UniOneDriveWebApp.Models.SubscriptionViewModel
+@{
+    ViewBag.Title = "Subscription Results";
+}
+
+<h2>New Subscriptions</h2>
+
+<div>
+    <table>
+        @foreach (var subs in Model.Subscriptions)
+        {
+            <tr>
+                <td>
+                    @Html.LabelForModel(subs.Value.Resource, htmlAttributes: new {@class = "control-label col-md-2"})
+                </td>
+                <td>
+                    @subs.Value.Resource
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.LabelForModel(subs.Value.ClientState, htmlAttributes: new {@class = "control-label col-md-2"})
+                </td>
+                <td>
+                    @subs.Value.ClientState
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.LabelForModel(subs.Value.SubscriptionId, htmlAttributes: new {@class = "control-label col-md-2"})
+                </td>
+                <td>
+                    @subs.Value.SubscriptionId
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.LabelForModel(subs.Value.SubscriptionExpirationDateTime.ToString("F"), htmlAttributes: new {@class = "control-label col-md-2"})
+                </td>
+                <td>
+                    @subs.Value.SubscriptionExpirationDateTime
+                </td>
+            </tr>
+        }
+    </table>
+</div><br />
+<div>
+  @using (Html.BeginForm("LoadView", "Notification"))
+  {
+      <button type="submit">Watch for notifications</button>
+  }
+</div>
